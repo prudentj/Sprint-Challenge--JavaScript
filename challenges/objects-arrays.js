@@ -77,7 +77,7 @@ This will be an array of strings.
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
 
-graduates.forEach(function(value){universities.push(value.university)});
+graduates.forEach( value => universities.push(value.university));
 universities.sort();
 
 console.log(universities);
@@ -91,18 +91,14 @@ The resulting contact information strings should have a space between the first 
 
 Log the result of your new array. */
 const contactInfo = [];
-graduates.forEach(function(value){contactInfo.push(`${value.first_name} ${value.email}`)})
+graduates.forEach((value)=>{contactInfo.push(`${value.first_name} ${value.email}`)})
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name.
  Create a new array called unisWithUni that contains them all. This will be an array of objects.
   Log the result. */
 const unisWithUni = [];
-graduates.forEach(function(value){
-  if(value.university.search("Uni")>-1){
-    unisWithUni.push(value)
-  }
-})
+graduates.forEach(value => {if(value.university.search("Uni")>-1){unisWithUni.push(value)}})
 console.log(unisWithUni);
 
 
@@ -132,7 +128,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
-zooAnimals.forEach(function(value){displayNames.push(`Name:${value.animal_name}, Scientific: ${value.scientific_name}`)})
+zooAnimals.forEach(value => displayNames.push(`Name:${value.animal_name}, Scientific: ${value.scientific_name}`))
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -143,7 +139,7 @@ Using map, create a new array of strings named lowCaseAnimalNames,
 
 */
 
-const lowCaseAnimalNames = zooAnimals.map(function(value){return value.animal_name.toLowerCase()});
+const lowCaseAnimalNames = zooAnimals.map(value => value.animal_name.toLowerCase());
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -164,7 +160,7 @@ The zoos need to know their total animal population across the United States.
    a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = zooAnimals.reduce(function(accumulator, currentValue){return accumulator+currentValue.population}, 0);
+const populationTotal = zooAnimals.reduce((accumulator, currentValue) => accumulator+currentValue.population, 0);
 console.log(populationTotal);
 
 
