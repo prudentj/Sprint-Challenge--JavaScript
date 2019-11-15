@@ -29,27 +29,32 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+(forEach) perfoms the operation within on every element of the existing array, while map creates a new array to do the operations.
 
 2. What is the difference between a function and a method?
+Methods are functions within objects, because if a value is a function it is a method.
 
 3. What is closure?
+Basically it is one like one sided glass where children elements can things one level above nested. This is even more so than other languages because of the two pass complier.
 
 4. Describe the four rules of the 'this' keyword.
+If it is at the global scope it refers to the console Object, if it comes before a function, the object that calls that function is what it refers to, if it is in a constructor function it refers to the new object, and if it is being used in certain methods (call/apply) it is explicitly defined.
 
 5. Why do we need super() in an extended class?
+Because underneath the hood it is doing all the maddness with prototypes we did on Wednesday. It needs to extend all the functionality from one classes prototype to the other classes prototype. 
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
